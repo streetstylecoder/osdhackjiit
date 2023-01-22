@@ -362,6 +362,20 @@ h3 {
 	.prize-wrapper {
 		display: block;
 	}
+    .icons{
+        visibility: hidden;
+    }
+    .navlinks{
+        visibility: hidden;
+    }
+    .devbtn{
+        width: 4rem;
+        height: auto;
+    }
+    .mainlogo{
+        position: absolute;
+        top:5rem;
+    }
 }
 
 

@@ -1,0 +1,73 @@
+html, body {
+    font-family: Verdana,sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+  }
+  *, *:before, *:after {
+      box-sizing: inherit;
+  }
+  .w3-container {
+    margin: auto;
+    padding:0.01em 16px;
+    width: 60%;
+  }
+  .zigzag-timeline__item {
+          /* Used to position the milestone */
+          position: relative;
+  
+          /* Border */
+          border-bottom: 1px solid #71717A;
+  
+          /* Take full width */
+          width: 100%;
+  
+          /* Room for milestone */
+          padding-left: 48px;
+          padding-right: 48px;
+      }
+  
+      p, h3 {
+      display: block;
+      margin-block-start: 0em;
+      /* margin-block-end: 1em; */
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-top: 8px;
+      }
+  
+      .zigzag-timeline__milestone {
+          /* Absolute position */
+          position: absolute;
+          top: 50%;
+  
+          /* Circle it */
+          border-radius: 50%;
+          border: 1px solid #f7d620;
+          height: 1.6rem;
+  
+          /* Misc */
+          background: #f7d620;
+          text-align: center;
+          padding: 10px;
+      }
+  
+      /* Styles for even items */
+      .zigzag-timeline__item:nth-child(2n) {
+          border-left: 1px solid #71717A;
+  
+      }
+  
+      .zigzag-timeline__item:nth-child(2n) .zigzag-timeline__milestone {
+          left: 0;
+          transform: translate(-50%, -50%);
+      }
+  
+      /* Styles for odd items */
+      .zigzag-timeline__item:nth-child(2n + 1) {
+          border-right: 1px solid #71717A;
+      }
+  
+      .zigzag-timeline__item:nth-child(2n + 1) .zigzag-timeline__milestone {
+          right: 0;
+          transform: translate(50%, -50%);
+      }
