@@ -1,0 +1,12 @@
+.shead{
+    font-size: 5rem;
+}
+
+.speaker_section{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 524px) { 
+
+}
